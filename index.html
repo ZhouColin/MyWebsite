@@ -1,261 +1,309 @@
-<!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Colin Zhou - Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="index is-preload">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <title>Colin Zhou</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="res/logo.png" />
 
-			<!-- Header -->
-				<header id="header" class="alt">
-					<h1 id="logo"><a href="index.html">My Profile</a></h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="no-sidebar.html" class="button primary">Résumé</a></li>
-						</ul>
-					</nav>
-				</header>
+    <!-- CSS Stylesheets and Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  </head>
 
-			<!-- Banner -->
-				<section id="banner">
+  <body>
+    <!-- Begin actual content -->
+    <div id="vantajs" style="height: 100%; width: 100%; position: fixed; z-index: 1;"></div>
+    <div id = "landing-container">
+      <div id = "landing-overlay" class="flexcontainer colflex">
+        <div id = "intro-text">
+          <h1 class="mobile-hide" style="color: white">Hi!</h1>
+          <h1 class="mobile-only">Hi! i'm</h1>
+          <div class = "rotating-text">
+            <h1 class="mobile-hide" style="color: white">I'm </h1>
+            <h1>
+              <span class="word col1">Colin.</span>
+              <span class="word col2">a UC Berkeley student.</span>
+              <span class="word col3">a software dev.</span>
+              <span class="word col4">a tech enthusiast.</span>
+              <span class="word col5">a musician.</span>
+            </h1>
+            <p id="prev-exp">UC Berkeley | Previously @Crowdbotics</p>
+          </div>
+        </div>
+        <div id = "intro-arrow">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
 
-					<!--
-						".inner" is set up as an inline-block so it automatically expands
-						in both directions to fit whatever's inside it. This means it won't
-						automatically wrap lines, so be sure to use line breaks where
-						appropriate (<br />).
-					-->
-					<div class="inner">
+    <!-- Personal Bio -->
+    <div class="main_container" id="bio_container">
+      <div id="bio">
+        <h2>
+          <span class="hover">About</span>
+        </h2>
+        <p id="bio_body">
+        </p>
+        <p style="margin:auto; width: 70%;" class="card-1" id="bio_json">
+                  <span id=json0>{<br></span>
+                  <span id=json1>
+                    <span id=json1_1>"name"</span>
+                    <span id=json1_2>:</span>
+                    <span id=json1_3>"Colin Zhou"</span>
+                    <span id=json1_2>,</span>
+                  </span>
+                  <span id=json2>
+                    <span id=json2_1>"isJobSearching"</span>
+                    <span id=json2_2>:</span>
+                    <span id=json3_4>true</span>
+                    <span id=json1_2>,</span>
+                  </span>
+                  <span id=json3>
+                    <span id=json3_1>"student"</span>
+                    <span id=json3_2>:</span>
+                    <span id=json3_4>true</span>
+                    <span id=json1_2>,</span>
+                  </span>
+                  <span id=json4>
+                    <span id=json4_1>"goal"</span>
+                    <span id=json4_2>:</span>
+                    <span id=json4_3>"building innovative solutions that help our environment."</span>
+                  </span>
+                  <span id=json4>
+                    <span id=json4_1>"school"</span>
+                    <span id=json4_2>:</span>
+                    <span id=json4_3>"UC Berkeley"</span>
+                  </span>
+                  <span id=json4>
+                    <span id=json4_1>"resume"</span>
+                    <span id=json4_2>:</span>
+                    <span id=json4_3>"<a style="color:#66cce1" href="https://github.com/ZhouColin/BlueBook" target="_blank">CLICK HERE</a>"</span>
+                  </span>
+                  <span id=json0>}<br></span>
+                </p>
+              </div>
+      </div>
+      </div>
+    </div>
 
-						<header>
-							<h2>COLIN ZHOU</h2>
-						</header>
-						<p><strong>Hi There!</strong> I'm Colin, a student at
-						<br />
-						UC Berkeley currently studying
-						<br />
-						Computer Science.
-						<br />
-						<footer>
-							<ul class="buttons stacked">
-								<li><a href="#main" class="button fit scrolly">Let's get started</a></li>
-							</ul>
-						</footer>
+    <!-- Work Experience Section -->
+    <div class="main_container" id="experience">
+      <h2>
+        <span class="hover">Experience</span>
+      </h2>
+      <div id="expcards">
+        <div class="card_container card-1">
+          <div class="main_card">
+            <div class="flexcontainer job-info">
+              <img class="company-logo" src="res/crowdbotics.png" title="Crowdbotics">
+              <div>
+                <h3 class="slider__caption">Crowdbotics</h3>
+                </a>
+                <br>
+                <h3 class="job_title">Software Engineering Intern | Summer 2019</h3>
+              </div>
+            </div>
+            <p class="slider__txt">
+              Crowdbotics is a startup that uses a combination of machine learning and expert developers to help both technical and non-technical teams build complex software applications faster. I developed cookiecutter "blueprints" of several React-Native features that allows customers to add messaging, calendar planning, push notifications, promotional codes, map navigation, video calling, picture taking, and account setup. I fixed a bug in the web app’s Heroku installation of the Docker server’s environment and fixed a runtime issue with Crowdbotic's mobile app deployment by using CircleCI's Local CLI feature. Finally, as a final project, I had the chance to build a personal React Native app using the Crowdbotics platform named <a href="https://github.com/ZhouColin/BlueBook" target="_blank">"BlueBook"</a>!
+            </p>
+            <ul class="techlist">
+              <li>JavaScript</li>
+              <li>Ruby</li>
+              <li>Objective-C</li>
+              <li>Java</li>
+              <li>Python</li>
+            </ul>
+          </div>
+          <div id="langbar0" class="lang_bar">
+            <span class="tooltiptext">JavaScript, Ruby, Objective-C, Java, Python.<br></span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-					</div>
+    <!-- Project Section -->
+    <div id="projects" class="main_container">
+      <h2>
+        <span class="hover">Projects</span>
+      </h2>
+      <ul class="project_list">
+        <div class="accordion">
+        	<div class="accordion-item card-1 is-active flexcontainer">
+            <div class="proj_left">
+              <div class="proj_desc flexcontainer">
+          		    <h3 class="accordion-thumb"> pHeed</h3>
+                  <p class="short-desc">— a mobile app to detoxify your social feed</p>
+                  <div class="spacer"></div>
+                  <a target="_blank" href="https://devpost.com/software/pheed">[devpost]</a>
+                  <a target="_blank" href="https://github.com/ZhouColin/pHeed">[github]</a>
+                  <div class="accordion-arrow"></div>
+              </div>
+          		<div class="accordion-panel">
+                <p>
+                  Social media has been shown in studies that it thrives on emotional and moral content, particularly angry in nature. To make social media a place for knowledge and positivity, without the anger and hate that it can fuel,
+                  this app performs an analysis on all the Twitter accounts the user follows and reads the tweets, checking for negative language and tone. Using machine learning algorithms, the app can detect negative and potentially toxic
+                  tweets and accounts to warn users of the potential impact, while giving them the option to act how they see fit with this new information. In creating this app and its purpose, the goal is to put the user first and empower them with data.
+                </p>
+                <ul class="techlist">
+                  <li>Javascript</li>
+                  <li>Google Cloud</li>
+                  <li>Kotlin</li>
+                  <li>React Native</li>
+                </ul>
+          		</div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+        	<div class="accordion-item card-1 flexcontainer">
+            <div class="proj_left">
+              <div class="proj_desc flexcontainer">
+          		    <h3 class="accordion-thumb">BlueBook</h3>
+                  <p class="short-desc">— automated mobile app creation</p>
+                  <div class="spacer"></div>
+                  <a target="_blank" href="https://github.com/ZhouColin/BlueBook">[github]</a>
+                  <div class="accordion-arrow"></div>
+              </div>
+          		<div class="accordion-panel">
+                <p>
+                  BlueBook is an application that contains a wide range blueprinted features that can be combined for instantaneous app creation. By simply completing a checklist of features you want on your React Native app, BlueBook will make it for you.
+                  Current features include messaging, calendar planning, push notifications, promotional codes, map navigation, video calling, picture taking, and account setup.
+                </p>
+                <ul class="techlist">
+                  <li>JavaScript</li>
+                  <li>Ruby</li>
+                  <li>Objective-C</li>
+                  <li>Java</li>
+                  <li>Python</li>
+                </ul>
+          		</div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item card-1 flexcontainer">
+            <div class="proj_left">
+              <div class="proj_desc flexcontainer">
+                  <h3 class="accordion-thumb">iClass</h3>
+                  <p class="short-desc">— improving the student/professor attendance and lecture experience.</p>
+                  <div class="spacer"></div>
+                  <a target="_blank" href="https://github.com/ZhouColin/iClass">[github]</a>
+                  <div class="accordion-arrow"></div>
+              </div>
+              <div class="accordion-panel">
+                <p>
+                  The main purpose of the application would be to become a classroom necessity for students/professors. There are three primary parts to this project:
+                  <br />
+                  <br /> 1.   The app flow for attendance would be the professor sets a time range for attendance (i.e. first five minutes of class) and a location (i.e. Moffitt), and the student must be present in that location in order to sign into attendance.
+                  <br /> 2. The students can ask questions to the professor through the application which can significantly improve the class’s efficiency as the student tends to focus so hard on their question that they don’t pay attention to what the lecturer is saying.
+                  <br /> 3. The professor can see the information in a really simple web app and can react accordingly. The professor can also ask questions through the app (really simple polls).
 
-				</section>
+                </p>
 
-			<!-- Main -->
-				<article id="main">
+                <ul class="techlist">
+                  <li>Swift</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item card-1 flexcontainer">
+            <div class="proj_left">
+              <div class="proj_desc flexcontainer">
+                  <h3 class="accordion-thumb">Project SID</h3>
+                  <p class="short-desc">— large scale detection with drone swarms</p>
+                  <div class="spacer"></div>
+                  <a target="_blank" href="https://devpost.com/software/pennappsxx">[devpost]</a>
+                  <a target="_blank" href="https://github.com/jackyzha0/pennappsxx">[github]</a>
+                  <div class="accordion-arrow"></div>
+              </div>
+              <div class="accordion-panel">
+                <p>
+                  Project SID or Swarm Intelligent Drones, is an autonomous drone swarm that is capable of efficient and large scale detection. In this project, we've decided to apply it to tracking debris and trash. The drones carry out individual
+                  missions and provide data for us to generate reports mapping out hotspots and documenting the spread of debris. The project allows users to schedule different flight paths for a swarm of drones to search for debris. The drones are able
+                  to stream images to the web application and see detections of debris or trash.
+                </p>
+                <ul class="techlist">
+                  <li>Tello SDK</li>
+                  <li>Google Cloud</li>
+                  <li>Keras</li>
+                  <li>Flask</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item card-1 flexcontainer">
+            <div class="proj_left">
+              <div class="proj_desc flexcontainer">
+                  <h3 class="accordion-thumb">InDemand Parking</h3>
+                  <p class="short-desc">—  the AirBnB of public parking</p>
+                  <div class="spacer"></div>
+                  <a target="_blank" href="https://devpost.com/software/tbd-k5e14h">[devpost]</a>
+                  <a target="_blank" href="https://github.com/ZhouColin/ondemand-parking">[github]</a>
+                  <div class="accordion-arrow"></div>
+              </div>
+              <div class="accordion-panel">
+                <p>
+                  InDemand Parking is an Airbnb style service for street parking to alleviate the woes of the common driver. The backend work consisted of creating a database for users and parking spot listings,
+                  determining clusters for available parking spaces, and handling requests from users. I used Java due to its scalability. For data analysis, I used Python and Flask to connect to our machine learning microservice. Due to the scarcity of pretty languages, we had no choice but to stick with React for our front end work.
+                </p>
+                <ul class="techlist">
+                  <li>Java</li>
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>Shell</li>
+                  <li>Swift</li>
+                  <li>Python</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>
 
-					<header class="special container">
-						<span class="icon fa-user"></span>
-						<h2>"<strong>Dynamic</strong>, <strong>Ambitious</strong> and <strong>Meticulous</strong>"</h2>
-						<p> I believe that my strongest characteristics are that I am able to function effectively under
-						<br />
-						<strong>multiple</strong> environments, I am driven to <strong>succeed</strong>, and I am capable of paying attention to the <strong>smallest</strong> details.
-						</p>
-					</header>
+    <!-- Contact Info -->
+    <div class="middle">
+      <a class="btn" target="_blank" href="https://www.facebook.com/colinzhouknz">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="btn" target="_blank" href="https://www.linkedin.com/in/colin-zhou-knz/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="btn" target="_blank" href="https://github.com/ZhouColin">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </body>
 
-					<!-- One -->
-						<section class="wrapper style2 container special-alt">
-							<div class="row gtr-50">
-								<div class="col-8 col-12-narrower">
+  <!-- Load JS stuff -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+  <script src="https://www.vantajs.com/dist/vanta.waves.min.js"></script>
 
-									<header>
-										<h2>As a <strong>freshman programmer</strong> and an intended <strong>Computer Science</strong> Major,
-										<br />
-										I have a couple current projects under my belt.</h2>
-									</header>
-									<p>Listed below are three of my ongoing/completed projects from the past few years.
-									These all have been accumulated from since AP Computer Science, to CalHacks 5.0 and more.
-									More projects can be found in my attached résumé.</p>
-									<footer>
-										<ul class="buttons">
-											<li><a href="no-sidebar.html" class="button">Find Out More</a></li>
-										</ul>
+  <script>
+    VANTA.WAVES({
+      el: "#vantajs",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      zoom: 0.68,
+      color: 0x5588,
+    })
+  </script>
 
-									</footer>
-
-								</div>
-								<div class="col-4 col-12-narrower imp-narrower">
-
-									<ul class="featured-icons">
-
-										<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
-										<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-										<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
-										<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
-										<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
-										<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-									</ul>
-
-								</div>
-							</div>
-						</section>
-
-					<!-- Two -->
-						<section class="wrapper style1 container special">
-							<div class="row">
-								<div class="col-4 col-12-narrower">
-
-									<section>
-										<span class="icon featured fa-map-marker"></span>
-										<header>
-											<h3>Cambi</h3>
-										</header>
-										<p>Fixed bugs and redesigned user interface for Cambi, a commerce system application thatprovides a loyalty and offer program to allow users to track and redeem rewards.</p>
-										</section>
-
-								</div>
-								<div class="col-4 col-12-narrower">
-
-									<section>
-										<span class="icon featured fa-gamepad"></span>
-										<header>
-											<h3>Chess Simulator</h3>
-										</header>
-										<p>Designed and expanded upon a multiplayer chess simulation in Java that adapted extra features
-										including “wild” pieces with random and was playable online.</p>
-										</section>
-
-								</div>
-								<div class="col-4 col-12-narrower">
-
-									<section>
-										<span class="icon featured fa-map"></span>
-										<header>
-											<h3>Cal Maps</h3>
-										</header>
-										<p>Created an android mobile map application of UC Berkeley’s campus that caters to student needs
-										by displaying detailed routes and local facilities based upon crowdsourced information.</p>
-										</section>
-
-								</div>
-							</div>
-						</section>
-
-					<!-- Three -->
-						<section class="wrapper style3 container special">
-
-							<header class="major">
-								<h2>An outlook into my <strong>work experience</strong></h2>
-							</header>
-
-							<div class="row">
-								<div class="col-6 col-12-narrower">
-
-									<section>
-										<a href="http://www.ipmdinc.com/" class="image featured"><img src="images/test5.jpg" alt="" /></a>
-										<header>
-											<h3>Project ATMA</h3>
-										</header>
-										<p>Programmed and collected over 600 input training data files and did research for Project Articial
-										Tragedy Monitor and Autoresponder (ATMA), branch of IPMD Inc. Participated in the Programming Team.
-										</section>
-
-								</div>
-								<div class="col-6 col-12-narrower">
-
-									<section>
-										<a href="http://upsync.org/" class="image featured"><img src="images/test2.jpg" alt="" /></a>
-										<header>
-											<h3>Upsync Consulting</h3>
-										</header>
-										<p>Analyst for the Data Analytics Committee for Upsync Consulting at UC Berkeley. Contributed to
-										data analysis, tech consulting, presentation building and website development.</p>
-										</section>
-
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-6 col-12-narrower">
-
-									<section>
-										<a href="http://www.doitgreensd41.ca" class="image featured"><img src="images/test3.jpg" alt="" /></a>
-										<header>
-											<h3>Burnaby Youth Sustainability Network</h3>
-										</header>
-										<p>Organized annual sustainblility-oriented campus-wide events, hosted monthly retreats for
-										shoreline cleanups, managed weekly recycling and fundraisers for endangered species.</p>
-										</section>
-
-								</div>
-								<div class="col-6 col-12-narrower">
-
-									<section>
-										<a href="http://www.forceofnaturealliance.ca/" class="image featured"><img src="images/test4.jpg" alt="" /></a>
-										<header>
-											<h3>Force of Nature Alliance</h3>
-										</header>
-										<p>Managed community outreach, marketing and decking for a solar power project that led to a
-										reduction of building permit fees for solar panel installations.</p>
-										</section>
-
-								</div>
-							</div>
-							<!--
-
-							<footer class="major">
-								<ul class="buttons">
-									<li><a href="#" class="button">See More</a></li>
-								</ul>
-							</footer>
-							-->
-
-						</section>
-
-				</article>
-
-			<!-- CTA -->
-				<section id="cta">
-
-					<header>
-						<h2><strong>Questions</strong> and <strong>concerns</strong>?</h2>
-						<p> Contact me at <strong>colinzhou@berkeley.edu</strong>
-						<br />
-						Make sure you check out my résumé, and the provided media links below. Thanks!</p>
-					</header>
-					<footer>
-						<ul class="buttons">
-							<li><a href="#main" class="button primary scrolly">Back to Top</a></li>
-						</ul>
-					</footer>
-
-				</section>
-
-			<!-- Footer -->
-				<footer id="footer">
-
-					<ul class="icons">
-						<li><a href="https://www.facebook.com/colinzhouknz" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://github.com/ZhouColin" class="icon circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/colin-zhou-knz/" class="icon circle fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					</ul>
-
-				</footer>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
