@@ -44,7 +44,6 @@ body {
   position: relative;
   color: var(--dark);
   z-index: 2;
-  margin-top: 100px;
 }
 
 .colflex {
@@ -201,6 +200,7 @@ h1 {
   float: center;
   flex: 0 0 100%;
   line-height: 1.0;
+  margin-top: 100px;
 }
 
 #bio_body {

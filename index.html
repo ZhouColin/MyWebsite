@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
   </head>
 
   <body>
@@ -20,7 +21,7 @@
       <div id = "landing-overlay" class="flexcontainer colflex">
         <div id = "intro-text">
           <h1 class="mobile-hide" style="color: white">Hi!</h1>
-          <h1 class="mobile-only">Hi! i'm</h1>
+          <h1 class="mobile-only">Hi! I'm</h1>
           <div class = "rotating-text">
             <h1 class="mobile-hide" style="color: white">I'm </h1>
             <h1>
@@ -38,12 +39,12 @@
           <div class="chevron"></div>
           <div class="chevron"></div>
         </div>
+        <canvas id="canvas"></canvas>
       </div>
-      <canvas id="canvas"></canvas>
     </div>
 
     <!-- Personal Bio -->
-    <div class="main_container" id="bio_container">
+    <div class="main_container wow fadeInLeft" data-wow-duration="2s" id="bio_container">
       <div id="bio">
         <h2>
           <span class="hover">About</span>
@@ -89,11 +90,9 @@
                 </p>
               </div>
       </div>
-      </div>
-    </div>
 
     <!-- Work Experience Section -->
-    <div class="main_container" id="experience">
+    <div class="main_container wow fadeInRight" data-wow-duration="2s" id="experience">
       <h2>
         <span class="hover">Experience</span>
       </h2>
@@ -128,7 +127,7 @@
     </div>
 
     <!-- Project Section -->
-    <div id="projects" class="main_container">
+    <div id="projects" class="main_container wow fadeInLeft" data-wow-duration="2s">
       <h2>
         <span class="hover">Projects</span>
       </h2>
@@ -304,6 +303,11 @@
       zoom: 0.68,
       color: 0x5588,
     })
+  </script>
+
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
   </script>
 
 </html>
