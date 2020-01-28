@@ -51,7 +51,7 @@ setInterval(rotateText, 3000);
 // Jump to Bio
 $("#landing-container").click(function() {
   $('html,body').animate({
-    scrollTop: $("#bio_container").offset().top
+    scrollTop: $("#bio").offset().top
   },
     duration = 1000);
 });
