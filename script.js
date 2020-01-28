@@ -367,11 +367,5 @@ class HoverButton {
   }
 }
 
-const btn1 = document.querySelector('li:nth-child(1) button');
+const btn1 = document.querySelector('li2:nth-child(1) button');
 new HoverButton(btn1);
-
-const btn2 = document.querySelector('li:nth-child(2) button');
-new HoverButton(btn2);
-
-const btn3 = document.querySelector('li:nth-child(3) button');
-new HoverButton(btn3);

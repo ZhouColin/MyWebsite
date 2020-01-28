@@ -124,7 +124,7 @@ a {
   right: 10%;
   width: 100%;
   align-items: center;
-  height: auto;
+
 }
 
 h1 {
@@ -294,7 +294,6 @@ ul.techlist {
 
 ul.techlist li {
   display:inline-block;
-  border-style: none;
   font-size: 1em;
   margin-right: 3px;
   padding: 0.4rem;
@@ -420,10 +419,10 @@ ul.techlist li {
   }
 }
 
-ul{
+ul2{
   padding: 0;
 }
-li{
+li2{
   display: inline-block;
   list-style-type: none;
   margin: 0 20px;
